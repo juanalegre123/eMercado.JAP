@@ -78,7 +78,7 @@
             margin-left: 45px;
         }
         
-        .login input[type="email"],
+        .login input[type="text"],
         .login input[type="password"] {
             border-bottom: 1px solid white;
             background: transparent;
@@ -96,7 +96,7 @@
             margin-left: 80px;
         }
         
-        .login input[type="submit"] {
+        .login input[type="button"] {
             background: rgb(190, 35, 87);
             color: white;
             font-weight: bold;
@@ -109,24 +109,24 @@
         <img class="carro" src="img-login/login_logo.jpg" alt="Oye soy un carrito y quiero llenarme de productos!!">
         <img class="ceibal" src="img-login/logo_ceibal.png">
         <h1><strong>e-MERCADO LOGIN</strong> </h1>
-        <form action="inicio.html">
 
-            <!--Nombre Usuario-->
-            <label for="username">Nombre de Usuario:</label>
-            <input type="email" placeholder="Ingresar Nombre Aquí" required>
-            <br>
-            <!--Contraseña-->
-            <label for="password">Contraseña:</label>
-            <input type="password" placeholder="Ingresar Contraseña Aquí" required>
 
-            <input type="submit" value="LogIn">
-            <br>
+        <!--Nombre Usuario-->
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="inputemail" placeholder="Ingresar Usuario Aquí" required>
+        <br>
+        <!--Contraseña-->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="inputpass" placeholder="Ingresar Contraseña Aquí" required>
 
-            <a class="olvido" href="#">Olvidó su contraseña?</a>
-            <br>
-            <a class="aun" href="#">Aún no tiene una cuenta?, Click Aquí</a>
+        <input type="button" id="login" value="LogIn">
+        <br>
 
-        </form>
+        <a class="olvido" href="#">Olvidó su contraseña?</a>
+        <br>
+        <a class="aun" href="#">Aún no tiene una cuenta?, Click Aquí</a>
+
+
 
 
 
