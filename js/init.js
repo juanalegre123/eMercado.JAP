@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     let contenedor = document.getElementById("container");
     if (usuario) {
         usuario = JSON.parse(usuario);
-        nameuser.innerText = nameuser.innerHTML + usuario.mail;
+        nameuser.innerText = nameuser.innerHTML + usuario.email;
         contenedor.style = "display:inline-block";
     }
 

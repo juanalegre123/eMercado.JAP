@@ -44,7 +44,7 @@ function showProductsList(array) {
             if (buscar == undefined || product.name.toLowerCase().indexOf(buscar) != -1) {
 
                 htmlContentToAppend += `
-        <div class="list-group-item list-group-item-action">
+        <a href= "product-info.html" class="list-group-item list-group-item-action">
             <div class="row">
                 <div class="col-3">
                     <img src="` + product.imgSrc + `" alt="` + product.description + `" class="img-thumbnail">
@@ -61,7 +61,7 @@ function showProductsList(array) {
 
                 </div>
             </div>
-        </div>
+        </a>
         `
             }
         }
