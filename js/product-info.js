@@ -1,4 +1,5 @@
 var product = {};
+var autosArrays = [];
 
 
 
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
             let productCurrencyHTML = document.getElementById("productCurrency");
             let productSoldCountHTML = document.getElementById("productSoldCount");
             let productCategoryHTML = document.getElementById("productCategory");
-            let productImgHTML = document.getElementById("productHTML|")
+            let productImgHTML = document.getElementById("productHTML")
 
 
             productNameHTML.innerHTML = `<h1>${product.name}</h1>`;
@@ -80,3 +81,31 @@ function showComment(comment) {
 
 
 }
+
+function showRelatedCars(product, arrayRelacionados) {
+
+    let contenido = `<hr>`;
+
+    arrayRelacionados.forEach(function(i) {
+
+
+
+
+
+
+    });
+
+    document.getElementById("productosRelacionados").innerHTML = contenido;
+};
+
+getJSONData(PRODUCT_INFO_URL).then(function(resultObj) {
+    if (resultObj.status === "ok") {
+        autosArrays = resultObj.data;
+
+        showRelatedCars(autosArrays, product.relatedProducts);
+
+    }
+
+
+
+});

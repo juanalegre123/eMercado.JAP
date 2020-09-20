@@ -49,8 +49,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
     let contenedor = document.getElementById("container");
     if (usuario) {
         usuario = JSON.parse(usuario);
-        nameuser.innerText = nameuser.innerHTML + usuario.email;
+        nameuser.innerText = usuario.mail;
         contenedor.style = "display:inline-block";
     }
 
 });
+
+function cerrarsesion() {
+    localStorage.clear()
+    window.location.href = "index.html"
+
+
+}
