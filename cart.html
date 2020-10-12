@@ -56,12 +56,62 @@
         </div>
     </nav>
     <div class="container p-5">
-        <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Artículo:</th>
+                    <th>-</th>
+                    <th>Cantidad:</th>
+                    <th>Precio:(UYU)</th>
+
+                </tr>
+            </thead>
+            <tbody id="listaProductos"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Costo Total:</td>
+                    <td id="sumaTot"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <h3>Variedades de Envíos</h3>
+        <br>
+        <div>
+            <input id="standard" name="envio" type="radio" value="6" checked="" required="">
+            <label for="standard">Standard :(6 a 8 días).</label><br>
+
+            <input id="express" name="envío" type="radio" value="3" required="">
+            <label for="express">Express :(3 a 5 días).</label><br>
+
+            <input id="nitro" name="envío" type="radio" value="1" required="">
+            <label for="nitro"><strong> NITRO:( -24 horas ).</strong></label><br>
+            <!-- PROXIMA ENTREGA 
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Artículo:</th>
+                        <th>Precio:</th>
+                        <th>Cantidad:</th>
+                    </tr>
+                </thead>
+                <tbody id="totalEnvio"></tbody>
+            </table>-->
+
+            <br>
+
+        </div>
+
+
+
+        <!--<div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
             <h4 class="alert-heading">¡A trabajar! :)</h4>
             <p>Esta sección corresponde a: Entrega 5 (Fecha de entrega: 11/10/2020) y Entrega 6 (Fecha de entrega: 25/10/2020).</p>
             <hr>
             <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
-        </div>
+        </div>-->
     </div>
     <div id="spinner-wrapper">
         <div class="lds-ring">
